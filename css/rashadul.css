@@ -5,6 +5,10 @@
 */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:wght@400;500&display=swap');
 
+/*
+ Basic css
+=============== */
+
 
 html {
     scroll-behavior: smooth;
@@ -14,14 +18,70 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 1.5;
+    color: #263340;
+    background-color: #2B3D4F;
     
 }
 a, a:hover {
     text-decoration: none;
-    font-weight: 500;
+    /* font-weight: 500; */
 
 }
 h1, h2, h3, h4 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
+}
+
+/*
+ Header area css
+=============== */
+.header-area {
+    border-bottom: 1px solid rgba(255,255, 255, .1);
+}
+.header-area .navbar .navbar-brand {
+    font-weight: 500;
+    letter-spacing: .1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    position: relative;
+}
+.header-area .navbar .navbar-brand span {
+    color: #16C0F0;
+    
+
+}
+.header-area .navbar .navbar-brand::after {
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 5px;
+    background-color: #16C0F0;
+    right: -5px;
+    bottom: 15px;
+}
+.header-area .nav-item .nav-link:hover {
+    color: #90e3fa;
+}
+.hireMeBtn {
+    background-color: #16C0F0;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 14px;
+    animation: bgChanger 1.5s infinite ease;
+}
+.hireMeBtn:hover {
+    color: aliceblue;
+    animation: none;
+}
+
+@keyframes bgChanger {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
