@@ -3,7 +3,7 @@
  font-family: 'Montserrat', sans-serif;
  font-family: 'Open Sans', sans-serif;
 */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap');
 
 /*
  Basic css
@@ -30,7 +30,62 @@ a, a:hover {
 h1, h2, h3, h4 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
+    color: #fff;
+    margin: 0;
+    padding: 0;
 }
+.page-title {
+margin-bottom: 35px;
+}
+.page-title h2 {
+    font-weight: 500;
+    position: relative;
+    display: inline-block;
+}
+
+.page-title h2::after {
+    content: "";
+    position: absolute;
+    bottom: -9px;
+    background-color: #25ACEB;
+    width: 5px;
+    height: 5px;
+    left: 50%;
+    z-index: 222;
+    border-radius: 50%;
+    transform: scale(1);
+    animation: pulse 2s infinite;
+}
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.9);
+        box-shadow: 0 0 0 0 rgba(37, 172, 235, 0.7);
+    }
+    
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 5px rgba(37, 172, 235, 0);
+    }
+    100% {
+        transform: scale(0.9);
+    }
+
+}
+.page-title h2::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: transparent linear-gradient(to right, transparent, #25ACEB, transparent) repeat scroll 0 0;
+    bottom: -8px;
+    z-index: 111;
+}
+
+
 
 /*
  Header area css
@@ -116,4 +171,49 @@ h1, h2, h3, h4 {
     color: #ffffff;
     font-size: 20px;
     text-transform: capitalize;
+}
+
+/*
+ service area css
+=============== */
+.service-area {
+    padding: 100px 0;
+    background-color: #263446;
+}
+
+.service-outer {
+    background-color: #2B3D4F;
+    border-bottom: 2px solid #16C0F0;
+    border-radius: 5px;
+    padding: 20px;
+    transition: transform .5s;
+}
+.service-outer h3 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 20px 0;
+}
+.service-outer p {
+    color: #c7c5c7;
+}
+.service-outer:hover {
+    transform: translateY(-5px);
+}
+.service_icon {
+    color: #16C0F0;
+    border-radius: 50%;
+    border: 1px solid #16C0F0;
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+    line-height: 60px;
+    text-align: center;
+    margin: 20px auto 0 auto;
+    transition: all 0.5s;
+    display: inline-block;
+}
+.service-outer:hover .service_icon {
+    background-color: #16C0F0;
+    color: #fff;
 }
