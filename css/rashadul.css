@@ -18,7 +18,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    color: #263340;
+    color: #c7c5c7;
     background-color: #2B3D4F;
     
 }
@@ -216,4 +216,110 @@ margin-bottom: 35px;
 .service-outer:hover .service_icon {
     background-color: #16C0F0;
     color: #fff;
+}
+
+/*
+ contact area css
+=============== */
+.contact-area {
+    padding: 100px 0;
+    background-color: #263446;
+}
+.address-outer,
+.contact-form-outer {
+    border: 3px solid #374757;
+    background-color: #2B3D4F;
+    padding: 35px 30px;
+    color: #fff;
+}
+.contact-form-outer form input,
+.contact-form-outer form textarea {
+    color: #fff;
+    background-color: #304255;
+    border: none;
+    padding: 15px;
+
+}
+.contact-form-outer form input:focus,
+.contact-form-outer form textarea:focus {
+    color: #fff;
+    outline: 0;
+    box-shadow: none;
+    background-color: #304255;
+}
+.contactBtn {
+    color: #16C0F0;
+    border: 1px solid #16C0F0;
+    border-radius: 50px;
+    padding: 10px 15px;
+}
+.contactBtn:hover {
+    background-color: #16C0F0;
+    color: #fff;
+}
+
+.address-outer {
+
+}
+.single-address {
+    position: relative;
+    padding: 25px;
+    color: #c7c5c7;
+    z-index: 333;
+    border-bottom: 2px solid #263446;
+}
+.single-address.location::before {
+    position: absolute;
+    content: "\f3c5";
+    left: -135px;
+    width: 100%;
+    z-index: 110;
+    height: 100%;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: #43647d;
+    font-size: 45px;
+    transform: rotate(-20deg);
+}
+.single-address.email::before {
+    position: absolute;
+    content: "\f0e0";
+    left: -135px;
+    width: 100%;
+    z-index: 110;
+    height: 100%;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: #43647d;
+    font-size: 45px;
+    transform: rotate(-20deg);
+}
+.single-address.phone::before {
+    position: absolute;
+    content: "\f095";
+    left: -135px;
+    width: 100%;
+    z-index: 110;
+    height: 100%;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: #43647d;
+    font-size: 45px;
+    transform: rotate(-10deg);
+}
+.single-address h4 {
+    color: #16C0F0;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.single-address:first-child {
+    padding-top: 0;
+}
+.single-address:last-child {
+    padding-bottom: 0;
+    border-bottom: 0px solid #263446;
+}
+.single-address address {
+    margin-bottom: 0; 
 }
