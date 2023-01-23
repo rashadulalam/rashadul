@@ -193,7 +193,7 @@ margin-bottom: 35px;
     background: rgb(38,52,70);
     background: radial-gradient(circle, rgba(38,52,70,1) 0%, rgba(18,44,79,1) 100%);
 }
-.about_text {}
+
 .about_text .about_deails h3 {
     color: #fff;
     font-weight: 600;
@@ -210,10 +210,7 @@ margin-bottom: 35px;
     line-height: 1.6;
 }
 
-.social-profiles {
-    
-    
-}
+
 
 .social-profiles a {
     background-color: #030406;
@@ -498,4 +495,25 @@ background: radial-gradient(circle, rgba(38,52,70,1) 0%, rgba(18,44,79,1) 100%);
 =============== */
 .footer-area {
     background-color: #030406
+}
+
+
+@media (max-width: 991px) {
+    .hero-text h1 {
+        font-size: 32px;
+        font-weight: 600;
+    }
+    .page-title {
+        text-align: center;
+    }
+    .about_text {
+        text-align: center;
+    }
+    .social-profiles {
+        text-align: center;
+
+    }
+    .work-content, .work-content.right {
+        text-align: center;
+    }
 }
