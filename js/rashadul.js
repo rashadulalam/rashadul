@@ -1,44 +1,42 @@
-// /**
-//  * Typing text
-//  */
-// async function typeSentence( sentence = "hello", delay = 100) {
-//     const el = document.getElementById("sentence");
-//     const letters = sentence.split("");
-//     let i = 0;
-//     while( i < letters.length ) {
-//         await waitForMs(delay);
-//         el.append(letters[i]);
-//         i++;
-//     }
-//     return;
-// }
-// // deleteing
+/**
+ * Email js
+ */
 
+const cForm = document.getElementById("contact_me");
+const ustatus = document.getElementById("ustatus");
 
-// async function deleteSentence() {
-//     const sentence = document.getElementById("sentence").innerHTML();
-//     const letters = sentence.split("");
-//     let i = 0;
-//     while(letters.length > 0) {
-//       await waitForMs(100);
-//       letters.pop();
-//       sentence.innerHTML(letters.join(""));
-//     }
-//   }
+cForm.addEventListener("submit", function( e ) {
+    // prevent submition
+    e.preventDefault();
+    const uname = document.getElementById("uname").value;
+    const umail = document.getElementById("umail").value;
+    const subject = document.getElementById("subject").value;
+    const umessage = document.getElementById("umessage").value;
+    
+    // check the value
+    if(uname, umail, subject, umessage) {
+        
+        // email js param
+        var templateParams = {
+            name: uname,
+            email: umail,
+            subject: subject,
+            message: umessage
+        };
+         
+        emailjs.send('service_8eoo6ni', 'template_068iu0m', templateParams)
+            .then(function(response) {
+                
+                ustatus.classList.remove("text-danger");
+                ustatus.classList.add("text-success");
+                ustatus.innerText = "Your email has been sent successfully. Thank you for contacting me!";
 
+            }, function(error) {
+                ustatus.innerText = "Sorry, there was an error sending your email. Please try again later or contact support for assistance.";
+        });
 
-// function waitForMs(ms) {
-//     return new Promise(resolve => setTimeout(resolve, ms))
-// }
+    } else {
+        ustatus.innerText = "Please fill in all required fields before submitting the form!"
+    }
 
-
-//     typeSentence("Mr. Stark, I don't feel so good..");
-//     typeSentence("Hello world");
-//     waitForMs(2000);
-//     deleteSentence(sentence);
-
-
-
-// const myText = ["Web Developer", "Programmer", "Dreamer", "Bloger"]
-// typeSentence(myText)
-// // typeSentence("Hey, over here!")
+});

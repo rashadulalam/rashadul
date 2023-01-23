@@ -203,6 +203,7 @@
           </div> <!-- . row-->
         </div> <!-- .container -->
       </section>
+
       <!-- contact area -->
       <section id="contact" class="contact-area">
         <div class="container">
@@ -239,20 +240,20 @@
             
             <div class="col-lg-8 mb-4 mb-lg-0">
               <div class="contact-form-outer">
-                <form>
+                <form id="contact_me">
                   <div class="mb-4">
-                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Name">
+                    <input type="text" class="form-control" id="uname" placeholder="Name">
                   </div>
                   <div class="mb-4">
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                    <input type="email" class="form-control" id="umail" placeholder="Email">
                   </div>
                   <div class="mb-4">
-                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Subject">
+                    <input type="text" class="form-control" id="subject" placeholder="Subject" >
                   </div>
                   <div class="mb-4">
-                    <textarea id="" placeholder="Your Message" class="form-control" rows="3"></textarea>
+                    <textarea id="umessage" placeholder="Your Message" class="form-control" rows="3" ></textarea>
                   </div>
-                  <div class="mb-4 text-danger">Please insert all field!</div>
+                  <div class="mb-4 text-danger" id="ustatus">Please insert all field!</div>
                   
                   <button type="submit" class="btn contactBtn">Send Message</button>
                 </form>
@@ -270,6 +271,13 @@
     
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="js/rashadul.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+          emailjs.init("6eM0bRgigus0pT2_T");
+      })();
+    </script>
+    <script src="js/rashadul.js"></script>  
   </body>
 </html>
