@@ -94,7 +94,8 @@ margin-bottom: 35px;
  Header area css
 =============== */
 .header-area {
-    
+    background: rgb(38,52,70);
+    background: radial-gradient(circle, rgba(38,52,70,1) 0%, rgba(18,44,79,1) 100%);
 }
 .header-area .navbar .navbar-brand {
     font-weight: 500;
@@ -126,7 +127,7 @@ margin-bottom: 35px;
     font-weight: 500;
     font-size: 14px;
     animation: bgChanger 1.5s infinite ease;
-    margin-top: 15px;
+
 }
 .hero-btn {
     background-color: #16C0F0;
@@ -209,8 +210,22 @@ margin-bottom: 35px;
     line-height: 1.6;
 }
 
+.social-profiles {
+    
+    
+}
 
-
+.social-profiles a {
+    background-color: #030406;
+    color: #707680;
+    display: inline-block;
+    padding: 5px 10px;
+    transition: color .5s ease;
+    font-size: 18px;
+}
+.social-profiles a:hover {
+    color: #16C0F0;
+}
 /*
  service area css
 =============== */
@@ -437,4 +452,10 @@ background: radial-gradient(circle, rgba(38,52,70,1) 0%, rgba(18,44,79,1) 100%);
 }
 .single-address address {
     margin-bottom: 0; 
+}
+/*
+ footer area css
+=============== */
+.footer-area {
+    background-color: #030406
 }
