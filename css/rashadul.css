@@ -453,6 +453,46 @@ background: radial-gradient(circle, rgba(38,52,70,1) 0%, rgba(18,44,79,1) 100%);
 .single-address address {
     margin-bottom: 0; 
 }
+
+
+
+/*
+ preloader area css
+=============== */
+/* preloader area css */
+#preloader-area {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#preloader-area::after,
+#preloader-area::before {
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 100%;
+    background-color: #111;
+    z-index: -1;
+    transition: .5s ease-in-out;
+
+}
+#preloader-area::after {left: 0;}
+#preloader-area::before {right:0}
+
+.page-loaded .spinner-border {
+    display: none;
+}
+#preloader-area.page-loaded::after {left: -50%;}
+#preloader-area.page-loaded::before {right:-50%}
+
+
+
 /*
  footer area css
 =============== */
