@@ -27,12 +27,15 @@ a, a:hover {
     /* font-weight: 500; */
 
 }
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     color: #fff;
     margin: 0;
     padding: 0;
+}
+p {
+    margin-bottom: 0;
 }
 .page-title {
 margin-bottom: 35px;
@@ -122,7 +125,8 @@ margin-bottom: 35px;
     color: #ffffff;
     font-weight: 500;
     font-size: 14px;
-    animation: bgChanger 1.5s infinite ease;
+    /* animation: bgChanger 1.5s infinite ease; */
+    margin-top: 15px;
 }
 .hireMeBtn:hover,
 .hero-btn:hover {
@@ -216,6 +220,82 @@ margin-bottom: 35px;
 .service-outer:hover .service_icon {
     background-color: #16C0F0;
     color: #fff;
+}
+
+/*
+ work area css
+=============== */
+.work-area {
+    padding: 100px 0;
+    /* background-color: #263446; */
+    background: rgb(38,52,70);
+background: radial-gradient(circle, rgba(38,52,70,1) 0%, rgba(18,44,79,1) 100%);
+}
+.work-image {}
+.work-content {}
+.work-content.right {
+    text-align: right;
+}
+.work-content h5 {
+    font-size: 16px;
+    color: #16C0F0;
+    font-weight: 500;
+
+}
+.work-content h3 {
+    font-size: 35px;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    text-stroke: 1px rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+.work-content .details{
+    display: flex;
+    justify-content: center;
+    background-color: #112240;
+    padding: 25px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+.work-content .technology {
+    /* margin-bottom: 15px; */
+}
+.work-content .technology ul {
+    margin: 0;
+    padding: 0;
+}
+.work-content .technology ul li {
+    position: relative;
+    list-style: none;
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #16C0F0;
+    
+}
+.work-content .technology ul li::before {
+    position: absolute;
+    content: "\f111";
+    font-family: "Font Awesome 6 Pro";
+    font-weight: 900;
+    left: 0;
+    font-size: 5px;
+    color: #16C0F0;
+    top: 50%;
+    transform: translateY(-50%);
+
+
+}
+.work-content .work-link {}
+.work-content .work-link a {
+    color: #707680;
+    display: inline-block;
+    padding: 5px;
+    transition: color .5s ease;
+}
+.work-content .work-link a:hover {
+    color: #16C0F0;
 }
 
 /*
