@@ -185,6 +185,33 @@ margin-bottom: 35px;
 }
 
 /*
+ about area css
+=============== */
+.about-area {
+    padding: 100px 0;
+    background: rgb(38,52,70);
+    background: radial-gradient(circle, rgba(38,52,70,1) 0%, rgba(18,44,79,1) 100%);
+}
+.about_text {}
+.about_text .about_deails h3 {
+    color: #fff;
+    font-weight: 600;
+    /* margin-bottom: 10px; */
+}
+.about_text .about_deails h4 {
+    color: #25ACEB;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.about_text .about_deails p {
+    letter-spacing: 0.01em;
+    line-height: 1.6;
+}
+
+
+
+/*
  service area css
 =============== */
 .service-area {
