@@ -491,6 +491,35 @@ background: radial-gradient(circle, rgba(38,52,70,1) 0%, rgba(18,44,79,1) 100%);
 
 
 /*
+ click top
+=============== */
+.click_top {
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+    background-color: #030406;
+    color: #707680;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(1);
+    animation: pulse 2s infinite;
+    
+}
+.click_top span {
+    font-weight: bold;
+    
+}
+.click_top span:hover {
+    color: rgb(22, 192, 240);
+}
+
+
+/*
  footer area css
 =============== */
 .footer-area {
@@ -517,3 +546,4 @@ background: radial-gradient(circle, rgba(38,52,70,1) 0%, rgba(18,44,79,1) 100%);
         text-align: center;
     }
 }
+
