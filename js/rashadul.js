@@ -43,6 +43,7 @@ cForm.addEventListener("submit", function( e ) {
 
 
 
+
 /**
  * Pre-loader
  */
@@ -56,3 +57,14 @@ window.onload = function () {
         preloaderArea.style.display = "none";
     }, 500);
 }
+
+/**
+ * cursor effect
+ */
+
+const cursorEl = document.getElementById("cursor");
+const cursorEl2 = document.getElementById("cursor2");
+
+document.addEventListener("mousemove", function(e) {
+    cursorEl.style.cssText = cursorEl2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px";
+})
