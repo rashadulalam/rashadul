@@ -120,12 +120,19 @@ margin-bottom: 35px;
 .header-area .nav-item .nav-link:hover {
     color: #90e3fa;
 }
-.hireMeBtn, .hero-btn {
+.hireMeBtn {
     background-color: #16C0F0;
     color: #ffffff;
     font-weight: 500;
     font-size: 14px;
-    /* animation: bgChanger 1.5s infinite ease; */
+    animation: bgChanger 1.5s infinite ease;
+    margin-top: 15px;
+}
+.hero-btn {
+    background-color: #16C0F0;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 14px;
     margin-top: 15px;
 }
 .hireMeBtn:hover,
@@ -351,41 +358,42 @@ background: radial-gradient(circle, rgba(38,52,70,1) 0%, rgba(18,44,79,1) 100%);
 .single-address.location::before {
     position: absolute;
     content: "\f3c5";
-    left: -135px;
+    left: -100px;
     width: 100%;
     z-index: 110;
     height: 100%;
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
-    color: #43647d;
+    color: #324c60;
     font-size: 45px;
     transform: rotate(-20deg);
 }
+
 .single-address.email::before {
     position: absolute;
     content: "\f0e0";
-    left: -135px;
+    left: -107px;
     width: 100%;
     z-index: 110;
     height: 100%;
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
-    color: #43647d;
+    color: #324c60;
     font-size: 45px;
     transform: rotate(-20deg);
 }
 .single-address.phone::before {
     position: absolute;
     content: "\f095";
-    left: -135px;
+    left: -110px;
     width: 100%;
     z-index: 110;
     height: 100%;
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
-    color: #43647d;
+    color: #324c60;
     font-size: 45px;
-    transform: rotate(-10deg);
+    transform: rotate(-8deg);
 }
 .single-address h4 {
     color: #16C0F0;
