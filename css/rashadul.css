@@ -159,6 +159,7 @@ text-align: center;
  Hero area css
 =============== */
 .hero-area {
+    min-height: 450px;
     height: 100vh;
     width: 100%;
     background-image: linear-gradient(to bottom, rgba(3, 24, 141, 0.52), rgba(0, 0, 0, 0.73)), url(../img/hero.jpg);
@@ -407,13 +408,14 @@ background: radial-gradient(circle, rgba(38,52,70,1) 0%, rgba(18,44,79,1) 100%);
     color: #c7c5c7;
     z-index: 333;
     border-bottom: 2px solid #263446;
+    z-index: 1;
 }
 .single-address.location::before {
     position: absolute;
     content: "\f3c5";
     left: -100px;
     width: 100%;
-    z-index: 110;
+    z-index: -1;
     height: 100%;
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
@@ -427,7 +429,7 @@ background: radial-gradient(circle, rgba(38,52,70,1) 0%, rgba(18,44,79,1) 100%);
     content: "\f0e0";
     left: -107px;
     width: 100%;
-    z-index: 110;
+    z-index: -1;
     height: 100%;
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
@@ -440,7 +442,7 @@ background: radial-gradient(circle, rgba(38,52,70,1) 0%, rgba(18,44,79,1) 100%);
     content: "\f095";
     left: -110px;
     width: 100%;
-    z-index: 110;
+    z-index: -1;
     height: 100%;
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
@@ -543,6 +545,7 @@ background: radial-gradient(circle, rgba(38,52,70,1) 0%, rgba(18,44,79,1) 100%);
     pointer-events: none;
     transform: translate(-50%, -50%);
     transition: .1s;
+    z-index: 9999;
 }
 
 #cursor2 {
@@ -556,6 +559,7 @@ background: radial-gradient(circle, rgba(38,52,70,1) 0%, rgba(18,44,79,1) 100%);
     pointer-events: none;
     transform: translate(-50%, -50%);
     transition: .1s;
+    z-index: 9999;
 }
 
 /*
