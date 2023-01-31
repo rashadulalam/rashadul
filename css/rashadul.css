@@ -165,8 +165,19 @@ text-align: center;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+    z-index: 333
 }
-.hero-text {}
+#particles-js {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+
+}
+
 .hero-text h3 {
     color: #16C0F0;
     text-transform: uppercase;
