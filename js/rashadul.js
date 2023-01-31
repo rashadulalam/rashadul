@@ -1,6 +1,9 @@
 /**
  * Email js
  */
+(function(){
+    emailjs.init("6eM0bRgigus0pT2_T");
+})();
 
 const cForm = document.getElementById("contact_me");
 const ustatus = document.getElementById("ustatus");
